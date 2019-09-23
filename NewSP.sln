@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "design", "..\design\", "{643940FA-6CCE-4780-A634-67785EA9CF27}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54135"
+		Debug.AspNetCompiler.PhysicalPath = "..\design\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54135\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54135"
+		Release.AspNetCompiler.PhysicalPath = "..\design\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54135\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54135"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "masterpage", "..\masterpage\", "{40B22064-D1C9-4665-9F31-1FCE9DA5B185}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54142"
+		Debug.AspNetCompiler.PhysicalPath = "..\masterpage\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54142\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54142"
+		Release.AspNetCompiler.PhysicalPath = "..\masterpage\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54142\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54142"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "style library", "..\style library\", "{B735367B-FFA9-4072-B16D-6DA2093A2A9D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_54148"
+		Debug.AspNetCompiler.PhysicalPath = "..\style library\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54148\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_54148"
+		Release.AspNetCompiler.PhysicalPath = "..\style library\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_54148\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "54148"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{643940FA-6CCE-4780-A634-67785EA9CF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{643940FA-6CCE-4780-A634-67785EA9CF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B22064-D1C9-4665-9F31-1FCE9DA5B185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B22064-D1C9-4665-9F31-1FCE9DA5B185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B735367B-FFA9-4072-B16D-6DA2093A2A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B735367B-FFA9-4072-B16D-6DA2093A2A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B62117DD-CABC-474F-936A-69CBD9EF9CB9}
+	EndGlobalSection
+EndGlobal
