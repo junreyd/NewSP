@@ -1,1 +1,1 @@
-﻿
+﻿var newSP = angular.module('newSP', []);
