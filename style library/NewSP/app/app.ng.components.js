@@ -1,7 +1,7 @@
 ﻿(function () {
     'use strict';
 
-    newSP.component('newSPTopNav', {
+    newSp.component('newSpTopNav', {
         controllerAs: 'vm',
         controller: function () {
             var ctrl = this;
@@ -12,9 +12,10 @@
         }
     });
 
-    newSP.component('newSPHeader', {
+    newSp.component('newSpHeader', {
         controllerAs: 'vm',
         controller: function () {
+            var ctrl = this;
         },
         templateUrl: '/style library/newsp/app/templates/glb-header.html',
         bindings: {
@@ -22,7 +23,7 @@
         }
     });
 
-    newSP.component('newSPFooter', {
+    newSp.component('newSpFooter', {
         controllerAs: 'vm',
         controller: function () {
             var ctrl = this;
