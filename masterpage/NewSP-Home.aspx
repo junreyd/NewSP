@@ -4,16 +4,18 @@
 	<SharePointWebControls:FieldValue id="PageTitle" FieldName="Title" runat="server" />
 </asp:Content>
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
-<div>
-    <h2>
+<div class="home-container">
+<%--    <h2>
         <SharePointWebControls:TextField runat="server" FieldName="Title"/>
-    </h2>
+    </h2>--%>
     <div class="content-cont">
         <h2>Hello New SP</h2>
             <PublishingWebControls:RichHtmlField FieldName="PublishingPageContent" HasInitialFocus="False" MinimumEditHeight="200px" runat="server" />
     </div>
     <div class="sp-zones-cont left">
         <WebPartPages:WebPartZone runat="server" Title="Left Column" ID="LeftColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
-    </div>     
+    </div> 
+    <new-sp-blog></new-sp-blog>
+    
 </div>	
 </asp:Content>
