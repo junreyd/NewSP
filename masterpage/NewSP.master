@@ -412,12 +412,6 @@
 <new-sp-top-nav></new-sp-top-nav>
 <new-sp-header></new-sp-header>
 
-    <h2>
-        <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/" id="SPLinkButton1" >
-	        <SharePoint:ProjectProperty Property="Title" runat="server" />
-        </SharePoint:SPLinkButton>
-    </h2>
-
     <div>
         <SharePoint:AjaxDelta id="DeltaPlaceHolderMain" BlockElement="true" IsMainContent="true" runat="server">
             <asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
@@ -533,7 +527,7 @@ StaticSubMenuIndent="0"
 
 
 <!-- OOB Left Navigation --> 
-<SharePoint:AjaxDelta id="DeltaPlaceHolderLeftNavBar" class="ms-core-navigation ms-belltown-sideNavDelta" BlockElement="true" runat="server" visible="false">
+<SharePoint:AjaxDelta id="DeltaPlaceHolderLeftNavBar" class="ms-core-navigation ms-belltown-sideNavDelta" BlockElement="true" runat="server">
 <asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server">
 <asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" runat="server" />
 <asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" runat="server" />

@@ -10,84 +10,12 @@
             <!-- featured-jobs end here -->
 
 
-            <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="col-md-3 col-sm-3 col-xs-12" ng-repeat="item in vm.items">
                 <div class="matter">
                     <a href="jobs.html">
                         <div class="boxbor">
-                            <i class="fa fa-desktop" aria-hidden="true"></i>
-                            <span>Information Technology</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="matter">
-                    <a href="jobs.html">
-                        <div class="boxbor">
-                            <i class="fa fa-university" aria-hidden="true"></i>
-                            <span>Banking</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="matter">
-                    <a href="jobs.html">
-                        <div class="boxbor">
-                            <i class="fa fa-money" aria-hidden="true"></i>
-                            <span>Accounting</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="matter">
-                    <a href="jobs.html">
-                        <div class="boxbor">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                            <span>Sales & marketing</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="matter">
-                    <a href="jobs.html">
-                        <div class="boxbor">
-                            <i class="fa fa-tachometer" aria-hidden="true"></i>
-                            <span>Digital & Creative</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="matter">
-                    <a href="jobs.html">
-                        <div class="boxbor">
-                            <i class="fa fa-suitcase" aria-hidden="true"></i>
-                            <span>Management</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="matter">
-                    <a href="jobs.html">
-                        <div class="boxbor">
-                            <i class="fa fa-gavel" aria-hidden="true"></i>
-                            <span>Legal Jobs</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="matter">
-                    <a href="jobs.html">
-                        <div class="boxbor">
-                            <i class="fa fa-tags" aria-hidden="true"></i>
-                            <span>Retail</span>
+                            <i class="fa fa-{{item.Category_x0020_Icon}}" aria-hidden="true"></i>
+                            <span>{{item.Title}}</span>
                         </div>
                     </a>
                 </div>

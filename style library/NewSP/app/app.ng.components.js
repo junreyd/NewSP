@@ -50,4 +50,20 @@
         }
     });
 
+    newSp.component('newSpBrowse', {
+        controllerAs: 'vm',
+        controller: function (svc) {
+            var ctrl = this;
+            ctrl.tempUrl = svc.getTemplateUrl('browse.html');
+
+            svc.getJobCategories().then(function (c) {
+                ctrl.items = c;
+            });
+        },
+        template: "<div ng-include='vm.tempUrl'></div>",
+        bindings: {
+            title: '@'
+        }
+    });
+
 })(); //end of main func
