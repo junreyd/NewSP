@@ -43,6 +43,7 @@
         controller: function (svc) {
             var ctrl = this;
             ctrl.tempUrl = svc.getTemplateUrl('blog.html');
+            ctrl.imageUrl = svc.getImagesDirUrl();
         },
         template: "<div ng-include='vm.tempUrl'></div>",
         bindings: {

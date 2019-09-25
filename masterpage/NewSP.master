@@ -7,6 +7,7 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <SharePoint:SPHtmlTag ng-app="newSp" dir="<%$Resources:wss,multipages_direction_dir_value%>" ID="SPHtmlTag" runat="server" >
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="GENERATOR" content="Microsoft SharePoint" />
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=10"/>
@@ -105,7 +106,7 @@
     SharePoint 2013 TOOL Bar with Waffle icon                
 ***************************************************** --> 
 	<SharePoint:AuthenticatedUserDiv runat="server" ClientIDMode="static" Id="authWrapper" AuthenticatedStyle="ms-belltown-authenticated">
-<div id="suiteBar" class="ms-dialogHidden noindex">
+<%--<div id="suiteBar" class="ms-dialogHidden noindex">
 	<div id="suiteBarLeft">
 		<div class="ms-table ms-fullWidth">
 			<div class="ms-tableRow">
@@ -251,7 +252,7 @@
 			</SharePoint:SPSecurityTrimmedControl>
 		</SharePoint:AjaxDelta>
 	</div>
-</div>
+</div>--%>
 
 
 <!-- ****************************************************

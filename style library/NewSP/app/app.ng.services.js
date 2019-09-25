@@ -20,7 +20,10 @@
                 return _siteUrl;
             },
             getTemplateUrl: function (templateName) {
-                return `${_siteUrl}/style library/newsp/app/templates/${templateName}`;
+                return `${_siteUrl}style library/newsp/app/templates/${templateName}`;
+            },
+            getImagesDirUrl: function () {
+                return `${_siteUrl}style library/newsp/design/images/`;
             },
             getJobCategories: function () {
                 var url = `${_subSiteUrl}/_api/web/lists/getbyTitle('JobCategories')/items`;
