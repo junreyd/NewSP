@@ -103,10 +103,11 @@
 	</SharePoint:SPSecurityTrimmedControl>
 
 <!-- ****************************************************
-    SharePoint 2013 TOOL Bar with Waffle icon                
+                     SuiteBar                
 ***************************************************** --> 
+  
 	<SharePoint:AuthenticatedUserDiv runat="server" ClientIDMode="static" Id="authWrapper" AuthenticatedStyle="ms-belltown-authenticated">
-<%--<div id="suiteBar" class="ms-dialogHidden noindex">
+<div id="suiteBar" class="ms-dialogHidden noindex">
 	<div id="suiteBarLeft">
 		<div class="ms-table ms-fullWidth">
 			<div class="ms-tableRow">
@@ -252,7 +253,7 @@
 			</SharePoint:SPSecurityTrimmedControl>
 		</SharePoint:AjaxDelta>
 	</div>
-</div>--%>
+</div>
 
 
 <!-- ****************************************************
@@ -373,26 +374,25 @@
 <!-- ****************************************************
     WEB Part Updater and Gallery for Edit Page                
 ***************************************************** --> 
-<SharePoint:AjaxDelta id="DeltaWebPartAdderUpdatePanelContainer" BlockElement="true" CssClass="ms-core-webpartadder" runat="server">
-  <div id="WebPartAdderUpdatePanelContainer">
-	<asp:UpdatePanel
-		ID="WebPartAdderUpdatePanel"
-		UpdateMode="Conditional"
-		ChildrenAsTriggers="false"
-		runat="server">
-	  <ContentTemplate>
-		<WebPartPages:WebPartAdder ID="WebPartAdder" runat="server" />
-	  </ContentTemplate>
-	  <Triggers>
-		<asp:PostBackTrigger ControlID="WebPartAdder" />
-	  </Triggers>
-	</asp:UpdatePanel>
-  </div>
-</SharePoint:AjaxDelta>
+                    <SharePoint:AjaxDelta id="DeltaWebPartAdderUpdatePanelContainer" BlockElement="true" CssClass="ms-core-webpartadder" runat="server">
+                      <div id="WebPartAdderUpdatePanelContainer">
+	                    <asp:UpdatePanel
+		                    ID="WebPartAdderUpdatePanel"
+		                    UpdateMode="Conditional"
+		                    ChildrenAsTriggers="false"
+		                    runat="server">
+	                      <ContentTemplate>
+		                    <WebPartPages:WebPartAdder ID="WebPartAdder" runat="server" />
+	                      </ContentTemplate>
+	                      <Triggers>
+		                    <asp:PostBackTrigger ControlID="WebPartAdder" />
+	                      </Triggers>
+	                    </asp:UpdatePanel>
+                      </div>
+                    </SharePoint:AjaxDelta>
 				</div>
 			</div>
 		</div>
-
 
 <div id="s4-workspace">
 	<div id="s4-bodyContainer">
@@ -410,16 +410,13 @@
 
 <div class="NewSp-container">
 
-<new-sp-top-nav></new-sp-top-nav>
-<new-sp-header></new-sp-header>
+
 
     <div>
         <SharePoint:AjaxDelta id="DeltaPlaceHolderMain" BlockElement="true" IsMainContent="true" runat="server">
             <asp:ContentPlaceHolder id="PlaceHolderMain" runat="server" />
         </SharePoint:AjaxDelta>
     </div>
-
-<new-sp-footer></new-sp-footer>
 
 </div>
 

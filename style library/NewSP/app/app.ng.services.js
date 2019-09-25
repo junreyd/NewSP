@@ -26,7 +26,7 @@
                 return `${_siteUrl}style library/newsp/design/images/`;
             },
             getJobCategories: function () {
-                var url = `${_subSiteUrl}/_api/web/lists/getbyTitle('JobCategories')/items`;
+                var url = `${_subSiteUrl}/_api/web/lists/getbytitle('JobCategories')/items`;
                 return _getSPItems(url).then(function (d) {
                     return d;
                 });

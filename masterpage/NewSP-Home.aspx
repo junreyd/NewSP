@@ -4,14 +4,28 @@
 	<SharePointWebControls:FieldValue id="PageTitle" FieldName="Title" runat="server" />
 </asp:Content>
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
-<div class="home-container">
+    <style>
+    #suiteBarLeft,
+    #suiteBarRight,
+    #suiteBar{
+        display: none !important;
+    }
 
+    #s4-ribbonrow {
+        display: none !important;
+    }
+    </style>
+
+</Sharepoint:SPSecurityTrimmedControl>
+<div class="home-container">
     <div class="content-cont">
+        <new-sp-top-nav></new-sp-top-nav>
+        <new-sp-header></new-sp-header>
             <PublishingWebControls:RichHtmlField FieldName="PublishingPageContent" HasInitialFocus="False" MinimumEditHeight="200px" runat="server" />
     </div>
     <div class="sp-zones-cont left">
         <WebPartPages:WebPartZone runat="server" Title="Left Column" ID="LeftColumn"><ZoneTemplate></ZoneTemplate></WebPartPages:WebPartZone>
     </div> 
-    
+<new-sp-footer></new-sp-footer>
 </div>	
 </asp:Content>
