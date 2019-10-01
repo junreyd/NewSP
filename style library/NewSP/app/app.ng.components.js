@@ -14,11 +14,12 @@
         }
     });
 
-    newSp.component('newSpHeader', {
+    newSp.component('newSpSideBar', {
         controllerAs: 'vm',
         controller: function (svc) {
             var ctrl = this;
-            ctrl.tempUrl = svc.getTemplateUrl('glb-header.html');
+            ctrl.siteUrl = svc.getSiteUrl();
+            ctrl.tempUrl = svc.getTemplateUrl('main-sidebar.html');
         },
         template: "<div ng-include='vm.tempUrl'></div>",
         bindings: {
@@ -26,11 +27,12 @@
         }
     });
 
-    newSp.component('newSpFooter', {
+    newSp.component('newSpMainFooter', {
         controllerAs: 'vm',
         controller: function (svc) {
             var ctrl = this;
-            ctrl.tempUrl = svc.getTemplateUrl('glb-footer.html');
+            ctrl.siteUrl = svc.getSiteUrl();
+            ctrl.tempUrl = svc.getTemplateUrl('main-footer.html');
         },
         template: "<div ng-include='vm.tempUrl'></div>",
         bindings: {
@@ -38,12 +40,12 @@
         }
     });
 
-    newSp.component('newSpBlog', {
+    newSp.component('newSpCtrlSidebar', {
         controllerAs: 'vm',
         controller: function (svc) {
             var ctrl = this;
-            ctrl.tempUrl = svc.getTemplateUrl('blog.html');
-            ctrl.imageUrl = svc.getImagesDirUrl();
+            ctrl.siteUrl = svc.getSiteUrl();
+            ctrl.tempUrl = svc.getTemplateUrl('control-sidebar.html');
         },
         template: "<div ng-include='vm.tempUrl'></div>",
         bindings: {
@@ -51,20 +53,57 @@
         }
     });
 
-    newSp.component('newSpBrowse', {
-        controllerAs: 'vm',
-        controller: function (svc) {
-            var ctrl = this;
-            ctrl.tempUrl = svc.getTemplateUrl('browse.html');
+    //newSp.component('newSpHeader', {
+    //    controllerAs: 'vm',
+    //    controller: function (svc) {
+    //        var ctrl = this;
+    //        ctrl.tempUrl = svc.getTemplateUrl('glb-header.html');
+    //    },
+    //    template: "<div ng-include='vm.tempUrl'></div>",
+    //    bindings: {
+    //        title: '@'
+    //    }
+    //});
 
-            svc.getJobCategories().then(function (c) {
-                ctrl.items = c;
-            });
-        },
-        template: "<div ng-include='vm.tempUrl'></div>",
-        bindings: {
-            title: '@'
-        }
-    });
+    //newSp.component('newSpFooter', {
+    //    controllerAs: 'vm',
+    //    controller: function (svc) {
+    //        var ctrl = this;
+    //        ctrl.tempUrl = svc.getTemplateUrl('glb-footer.html');
+    //    },
+    //    template: "<div ng-include='vm.tempUrl'></div>",
+    //    bindings: {
+    //        title: '@'
+    //    }
+    //});
+
+    //newSp.component('newSpBlog', {
+    //    controllerAs: 'vm',
+    //    controller: function (svc) {
+    //        var ctrl = this;
+    //        ctrl.tempUrl = svc.getTemplateUrl('blog.html');
+    //        ctrl.imageUrl = svc.getImagesDirUrl();
+    //    },
+    //    template: "<div ng-include='vm.tempUrl'></div>",
+    //    bindings: {
+    //        title: '@'
+    //    }
+    //});
+
+    //newSp.component('newSpBrowse', {
+    //    controllerAs: 'vm',
+    //    controller: function (svc) {
+    //        var ctrl = this;
+    //        ctrl.tempUrl = svc.getTemplateUrl('browse.html');
+
+    //        svc.getJobCategories().then(function (c) {
+    //            ctrl.items = c;
+    //        });
+    //    },
+    //    template: "<div ng-include='vm.tempUrl'></div>",
+    //    bindings: {
+    //        title: '@'
+    //    }
+    //});
 
 })(); //end of main func

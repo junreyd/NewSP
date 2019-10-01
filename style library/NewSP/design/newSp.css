@@ -4,4 +4,12 @@ a#ctl00_ctl67_ShellSites.ms-core-suiteLink-a {
     display: none;
 }*/
 
+#suiteBarLeft,
+#suiteBarRight,
+#suiteBar {
+    display: none !important;
+}
 
+#s4-ribbonrow {
+    display: none !important;
+}
