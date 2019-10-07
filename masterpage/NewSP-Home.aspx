@@ -15,7 +15,7 @@ will be placed in the <head> of the page --%>
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
     <link rel="stylesheet" href="/Style Library/NewSP/design/newSp.css">
 	<link rel="stylesheet" href="/Style Library/NewSP/design/adminLTE/AdminLTE.min.css">
-	<link rel="stylesheet" href="/Style Library/NewSP/design/adminLTE/skins/_all-skins.min.css">
+	<link rel="stylesheet" href="/Style Library/NewSP/design/adminLTE/skins/skin-blue.min.css">
 	<style>
 	app { display: block }
 	</style>
@@ -24,13 +24,13 @@ will be placed in the <head> of the page --%>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-    <div class="hold-transition skin-blue sidebar-mini">
+    <body class="hold-transition skin-blue sidebar-mini">
 	<div class="wrapper">
         <new-sp-top-nav></new-sp-top-nav>
         <new-sp-side-bar></new-sp-side-bar>
         <new-sp-main-footer></new-sp-main-footer>
         <new-sp-ctrl-sidebar></new-sp-ctrl-sidebar>
 	</div>
-    </div>
+    </body>
     <script src="/Style Library/NewSP/design/adminLTE/adminlte.min.js"></script>
 </asp:Content>
