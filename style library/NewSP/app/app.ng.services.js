@@ -2,9 +2,9 @@
     'use strict';
 
     newSp.factory('svc', ['$http', '$q', function ($http, $q) {
-        var _siteUrl = window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
-        var _subSiteUrl = _spPageContextInfo.webAbsoluteUrl;
-        var _webUrl = _spPageContextInfo.webServerRelativeUrl;
+        var _siteUrl = window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl; // 'https://intranet.houseofit.com.au/'
+        var _subSiteUrl = _spPageContextInfo.webAbsoluteUrl; // 'https://intranet.houseofit.com.au/sp'
+        var _webUrl = _spPageContextInfo.webServerRelativeUrl; // '/sp'
         var _getConfig = {
             headers: {'accept': 'application/json;odata=verbose'}
         }
@@ -16,7 +16,8 @@
         }
 
         return {
-            getSiteUrl: function() {
+            getSiteUrl: function () {
+                console.log("asdfasdf", _subSiteUrl);
                 return _siteUrl;
             },
             getTemplateUrl: function (templateName) {
