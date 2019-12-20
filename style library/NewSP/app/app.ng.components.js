@@ -9,8 +9,13 @@
             ctrl.tempUrl = svc.getTemplateUrl('top-nav.html');
 
             ctrl.$onInit = function () {
-                svc.getUserProfile().then(function (c) {
+                svc.getCurrentUser().then(function (c) {
                     ctrl.items = c;
+                });
+
+                svc.getUserProfile().then(function (c) {
+                    console.log("COMPONENTS URL: ", c);
+                    ctrl.imgs = c;
                 });
             }
         },

@@ -5,7 +5,7 @@
         var _siteUrl = window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
         var _subSiteUrl = _spPageContextInfo.webAbsoluteUrl; //
         var _webUrl = _spPageContextInfo.webServerRelativeUrl; // '/sp'
-        var userID = 184; //_spPageContextInfo.userId;
+        var userID = _spPageContextInfo.userId; //artem userID 184
         var _getConfig = {
             headers: { 'accept': 'application/json;odata=verbose' }
         }
@@ -18,7 +18,6 @@
 
         function _getSPUser(endpoint) {
             return $http.get(endpoint, _getConfig).then(function (d) {
-                console.log("userDetails: ", d);
                 return d.data.d.Title;
             });
         }
@@ -39,10 +38,23 @@
                     return d;
                 });
             },
-            getUserProfile: function () {
+            getCurrentUser: function () {
                 var url = `${_siteUrl}/_api/web/getuserbyid(${userID})`;
                 return _getSPUser(url).then(function (d) {
                     return d;
+                });
+            },
+            getUserProfile: function () {
+                var url = `${_siteUrl}/_api/web/lists/getbytitle('Employee Profile')/items?$filter=LI_Username eq 'junreyd'`;
+                return _getSPItems(url).then(function (d) {
+
+                    var imgUrl = "";
+
+                    d.forEach(function (item) {
+                        imgUrl = item.profilepic.Url;
+                    });
+
+                    return imgUrl;
                 });
             }
         }
