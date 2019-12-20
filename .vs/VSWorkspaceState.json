@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\NewSP"
+    "\\masterpage",
+    "\\NewSP",
+    "\\style library",
+    "\\style library\\NewSP",
+    "\\style library\\NewSP\\app"
   ],
-  "SelectedNode": "\\NewSP\\NewSP.sln",
+  "SelectedNode": "\\style library\\NewSP\\app\\app.ng.services.js",
   "PreviewInSolutionExplorer": false
 }

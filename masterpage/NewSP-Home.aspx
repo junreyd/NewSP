@@ -17,6 +17,16 @@ will be placed in the <head> of the page --%>
 	<link rel="stylesheet" href="/Style Library/NewSP/design/adminLTE/AdminLTE.min.css">
 	<link rel="stylesheet" href="/Style Library/NewSP/design/adminLTE/skins/skin-blue.min.css">
 	<style>
+    #suiteBarLeft,
+    #suiteBarRight,
+    #suiteBar {
+        display: none !important;
+    }
+
+    #s4-ribbonrow {
+        display: none !important;
+    }
+
 	app { display: block }
 	</style>
 	<!--[if lt IE 9]>
