@@ -7,6 +7,12 @@
             var ctrl = this;
             ctrl.siteUrl = svc.getSiteUrl();
             ctrl.tempUrl = svc.getTemplateUrl('top-nav.html');
+
+            ctrl.$onInit = function () {
+                svc.getUserProfile().then(function (c) {
+                    ctrl.items = c;
+                });
+            }
         },
         template: "<div ng-include='vm.tempUrl'></div>",
         bindings: {

@@ -2,11 +2,12 @@
     'use strict';
 
     newSp.factory('svc', ['$http', '$q', function ($http, $q) {
-        var _siteUrl = window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl; // 'https://intranet.houseofit.com.au/'
-        var _subSiteUrl = _spPageContextInfo.webAbsoluteUrl; // 'https://intranet.houseofit.com.au/sp'
+        var _siteUrl = window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
+        var _subSiteUrl = _spPageContextInfo.webAbsoluteUrl; //
         var _webUrl = _spPageContextInfo.webServerRelativeUrl; // '/sp'
+        var userID = 184; //_spPageContextInfo.userId;
         var _getConfig = {
-            headers: {'accept': 'application/json;odata=verbose'}
+            headers: { 'accept': 'application/json;odata=verbose' }
         }
 
         function _getSPItems(endpoint) {
@@ -15,9 +16,15 @@
             });
         }
 
+        function _getSPUser(endpoint) {
+            return $http.get(endpoint, _getConfig).then(function (d) {
+                console.log("userDetails: ", d);
+                return d.data.d.Title;
+            });
+        }
+
         return {
             getSiteUrl: function () {
-                console.log("asdfasdf", _subSiteUrl);
                 return _siteUrl;
             },
             getTemplateUrl: function (templateName) {
@@ -29,6 +36,12 @@
             getJobCategories: function () {
                 var url = `${_subSiteUrl}/_api/web/lists/getbytitle('JobCategories')/items`;
                 return _getSPItems(url).then(function (d) {
+                    return d;
+                });
+            },
+            getUserProfile: function () {
+                var url = `${_siteUrl}/_api/web/getuserbyid(${userID})`;
+                return _getSPUser(url).then(function (d) {
                     return d;
                 });
             }
