@@ -49,12 +49,17 @@
                 return _getSPItems(url).then(function (d) {
 
                     var imgUrl = "";
-
+                    var userposTitle = "";
                     d.forEach(function (item) {
                         imgUrl = item.profilepic.Url;
+                        userposTitle = item.LI_PositionTitle;
                     });
 
-                    return imgUrl;
+                    var results = {};
+                    results.imgUrl = imgUrl;
+                    results.userposTitle = userposTitle;
+
+                    return results;
                 });
             }
         }

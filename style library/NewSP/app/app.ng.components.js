@@ -14,8 +14,10 @@
                 });
 
                 svc.getUserProfile().then(function (c) {
-                    console.log("COMPONENTS URL: ", c);
-                    ctrl.imgs = c;
+                    console.log("COMPONENTS URL: ", c.imgUrl);
+                    console.log("Position Title: ", c.userposTitle);
+                    ctrl.imgs = c.imgUrl;
+                    ctrl.userposTitle = c.userposTitle;
                 });
             }
         },
