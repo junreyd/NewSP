@@ -45,6 +45,7 @@
                 });
             },
             getUserProfile: function () {
+
                 var url = `${_siteUrl}/_api/web/lists/getbytitle('Employee Profile')/items?$filter=LI_Username eq 'junreyd'`;
                 return _getSPItems(url).then(function (d) {
 
