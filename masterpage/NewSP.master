@@ -39,7 +39,8 @@
 
 
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular.min.js%>' />"></script>
-     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular-ui-router.min.js%>' />"></script>
+    <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular-route.min.js%>' />"></script>
+    <%--<script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular-ui-router.min.js%>' />"></script>--%>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/environment.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.modules.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.services.js%>' />"></script>
