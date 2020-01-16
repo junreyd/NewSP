@@ -42,5 +42,8 @@ will be placed in the <head> of the page --%>
         <new-sp-ctrl-sidebar></new-sp-ctrl-sidebar>
 	</div>
     </body>
+
     <script src="/Style Library/NewSP/design/adminLTE/adminlte.min.js"></script>
+    <script src="/Style Library/NewSP/design/adminLTE/adminlte.js"></script>
+
 </asp:Content>

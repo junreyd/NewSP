@@ -1,5 +1,6 @@
 ﻿var newSp = angular.module('newSp', ['ngRoute']);
 
+
 newSp.config(function ($routeProvider) {
     $routeProvider
 
@@ -8,12 +9,12 @@ newSp.config(function ($routeProvider) {
             controller: 'FirstController'
         })
 
-        .when('/blog', {
+        .when('/', {
             templateUrl: 'home.aspx/second.html',
             controller: 'SecondController'
         })
 
-        .when('/about', {
+        .when('/', {
             templateUrl: 'home.aspx/third.html',
             controller: 'ThirdController'
         })
