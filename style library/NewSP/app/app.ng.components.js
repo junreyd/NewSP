@@ -33,6 +33,10 @@
             var ctrl = this;
             ctrl.siteUrl = svc.getSiteUrl();
             ctrl.tempUrl = svc.getTemplateUrl('main-sidebar.html');
+
+            ctrl.$onInit = function () {
+
+            }
         },
         template: "<div ng-include='vm.tempUrl'></div>",
         bindings: {

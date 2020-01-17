@@ -44,6 +44,5 @@ will be placed in the <head> of the page --%>
     </body>
 
     <script src="/Style Library/NewSP/design/adminLTE/adminlte.min.js"></script>
-    <script src="/Style Library/NewSP/design/adminLTE/adminlte.js"></script>
 
 </asp:Content>

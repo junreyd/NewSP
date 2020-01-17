@@ -967,17 +967,10 @@ if (typeof jQuery === 'undefined') {
 
     // Tree Data API
     // =============
-    //$(window).on('load', function () {
-    //    $(Selector.data).each(function () {
-    //        Plugin.call($(this));
-    //    });
-    //});
-
-    $(document).ready(function () {
+    $(window).on('load', function () {
         $(Selector.data).each(function () {
-            console.log("call")
-            Plugin.call($(this))
-        })
+            Plugin.call($(this));
+        });
     });
 
 }(jQuery);
