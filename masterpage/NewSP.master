@@ -45,6 +45,7 @@
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.modules.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.services.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.components.js%>' />"></script>
+    <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.controller.js%>' />"></script>
     <!-- Custom Jquery References End -->
 
 	<SharePoint:CustomJSUrl runat="server" />
