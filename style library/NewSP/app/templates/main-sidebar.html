@@ -29,19 +29,20 @@
       <!-- /.search form -->
 
       <!-- Sidebar Menu -->
-     <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
-            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
+      <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">MAIN NAVIGATION</li>
+          <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                  <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                  <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+              </ul>
+          </li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -49,7 +50,7 @@
   </aside>
 
 <!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper" ng-controller="FirstController">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
@@ -76,10 +77,12 @@
         <h3>{{message}}</h3>
     </script>
 
+
+
     <section class="content container-fluid">
         <a href="#/">First</a>
-        <a href="#/second">Second</a>
-        <a href="#/third">Third</a>
+        <a href="#!second">Second</a>
+        <a href="#!third">Third</a>
         <div ng-view></div>
         <!--------------------------
         | Your Page Content Here |
@@ -88,4 +91,4 @@
     </section>
     <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
+<!-- //.content-wrapper -->
