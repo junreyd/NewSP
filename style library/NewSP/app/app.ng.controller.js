@@ -1,10 +1,10 @@
 ﻿(function () {
     'use strict';
 
-    newSp.controller('FirstController', ['$scope', function ($scope, svc) {
-        $scope.message = 'Hello from FirstController';
-        console.log("FirstController")
-        console.log(svc);
+    newSp.controller('FirstController', ['$scope', 'svc', '$templateCache',
+        function ($scope, svc, $templateCache) {
+            $scope.message = 'CEO Dashboard';
+            console.log("FirstController")
     }]);
 
     newSp.controller('SecondController', function ($scope) {

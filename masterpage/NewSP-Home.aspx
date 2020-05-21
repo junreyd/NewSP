@@ -11,8 +11,8 @@
 
 <%-- The markup and script in the following Content element 
 will be placed in the <head> of the page --%>
-
 <asp:Content ContentPlaceholderID="PlaceHolderMain" runat="server">
+    <%--<base href="/">--%>
     <link rel="stylesheet" href="/Style Library/NewSP/design/newSp.css">
 	<link rel="stylesheet" href="/Style Library/NewSP/design/adminLTE/AdminLTE.min.css">
 	<link rel="stylesheet" href="/Style Library/NewSP/design/adminLTE/skins/skin-blue.min.css">

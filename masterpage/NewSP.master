@@ -32,15 +32,14 @@
        <!-- Custom Jquery References Start -->
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/design/js/jquery.3.4.1.min.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/design/bootstrap/js/bootstrap.min.js%>' />"></script>
-<%--    <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/design/js/dist/js/bootstrap-select.js%>' />"></script>
+<%--<script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/design/js/dist/js/bootstrap-select.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/design/js/owl-carousel/owl.carousel.min.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/design/js/internal.js%>' />"></script>--%>
 
-
-
+    
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular.min.js%>' />"></script>
-    <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular-route.min.js%>' />"></script>
-    <%--<script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular-ui-router.min.js%>' />"></script>--%>
+    <%--<script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular-route.min.js%>' />"></script>--%>
+    <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/libs/angular-ui-router.min.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/environment.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.modules.js%>' />"></script>
     <script type="text/javascript" language="javascript" src="<asp:Literal runat='server' Text='<%$SPUrl:~sitecollection/Style Library/NewSP/app/app.ng.services.js%>' />"></script>
@@ -55,6 +54,7 @@
 	<SharePoint:CssRegistration Name="Themable/oslo.css" runat="server" EnableCssTheming="true" />
     <SharePoint:CssRegistration ID="CssRegistration1" name="<% $SPUrl:~sitecollection/Style Library/NewSP/design/bootstrap/css/bootstrap.css %>" runat="server" />
     <SharePoint:CssRegistration ID="CssRegistration7" name="<% $SPUrl:~sitecollection/Style Library/NewSP/design/font-awesome/css/font-awesome.min.css %>" runat="server" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <SharePoint:CssRegistration ID="CssRegistration8" name="<% $SPUrl:~sitecollection/Style Library/NewSP/design/css/style.css %>" runat="server" />
 
 <%--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"> 

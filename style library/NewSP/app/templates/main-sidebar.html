@@ -12,12 +12,12 @@
         <div class="pull-left info">
           <p>Junrey Ducay</p>
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="javscript:void(0)"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
 
       <!-- search form (Optional) -->
-      <form action="#" method="get" class="sidebar-form">
+      <!--<form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
           <span class="input-group-btn">
@@ -25,7 +25,7 @@
               </button>
             </span>
         </div>
-      </form>
+      </form>-->
       <!-- /.search form -->
 
       <!-- Sidebar Menu -->
@@ -39,8 +39,7 @@
                   </span>
               </a>
               <ul class="treeview-menu">
-                  <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                  <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                  <li class="active"><a href="#!ceo"><i class="fa fa-circle-o"></i> C.E.O</a></li>
               </ul>
           </li>
       </ul>
@@ -54,7 +53,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Page Header
+            {{message}}
             <small>Optional description</small>
         </h1>
         <ol class="breadcrumb">
@@ -64,26 +63,10 @@
     </section>
 
     <!-- Main content -->
-    <script type="text/ng-template" id="pages/first.html">
-        <h1>First</h1>
-        <h3>{{message}}</h3>
-    </script>
-    <script type="text/ng-template" id="pages/second.html">
-        <h1>Second</h1>
-        <h3>{{message}}</h3>
-    </script>
-    <script type="text/ng-template" id="pages/third.html">
-        <h1>Third</h1>
-        <h3>{{message}}</h3>
-    </script>
-
 
 
     <section class="content container-fluid">
-        <a href="#/">First</a>
-        <a href="#!second">Second</a>
-        <a href="#!third">Third</a>
-        <div ng-view></div>
+        <div ui-view></div>
         <!--------------------------
         | Your Page Content Here |
         -------------------------->
